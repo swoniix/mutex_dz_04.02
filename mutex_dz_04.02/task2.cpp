@@ -39,6 +39,18 @@ void loadForbidden() {
 		if (line.length() == 0) {
 			continue;
 		}
+		forbiddenWords[forbiddenWordsCount] = makeLowerCase(line);
+		forbiddenWordsCount++;
 	}
-
+	file.close();
+}
+void loadInput() {
+	ifstream file("input.txt");
+	string line;
+	textLinesCount = 0;
+	while (getline(file, line)) {
+		textFile[textLinesCount] = line;
+		textLinesCount++;
+	}
+	file.close();
 }
