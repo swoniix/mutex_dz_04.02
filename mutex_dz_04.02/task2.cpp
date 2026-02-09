@@ -2,6 +2,8 @@
 #include <mutex>
 #include <thread>
 #include <windows.h>
+#include <fstream>
+#include <string>
 using namespace std;
 
 string textFile[5000];
@@ -29,4 +31,14 @@ string makeLowerCase(string s) {
 	}
 	return result;
 }
-bool loadForbidden(filename = )
+void loadForbidden() {
+	ifstream file("forbidden.txt");
+	string line;
+	forbiddenWordsCount = 0;
+	while (getline(file, line)) {
+		if (line.length() == 0) {
+			continue;
+		}
+	}
+
+}
