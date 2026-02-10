@@ -4,5 +4,5 @@
     <Platform Name="x64" />
     <Platform Name="x86" />
   </Configurations>
-  <Project Path="mutex_dz_04.02/mutex_dz_04.02.vcxproj" />
+  <Project Path="mutex_dz_04.02/mutex_dz_04.02.vcxproj" Id="2922abf6-8e52-4a73-a08d-c3f9e72de65e" />
 </Solution>
